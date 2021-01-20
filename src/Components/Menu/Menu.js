@@ -1,4 +1,5 @@
 import React from 'react'
+import Pie from '../Pie/Pie'
 
 const Menu = (props) => {
   const { menuData } = props
