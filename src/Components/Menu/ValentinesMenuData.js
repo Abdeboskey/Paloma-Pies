@@ -1,4 +1,4 @@
-const valentinesMenu = [
+export const valentinesMenu = [
   {
    name: 'Chocolate Creme',
    ingredients: {
