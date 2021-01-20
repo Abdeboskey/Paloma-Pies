@@ -1,10 +1,30 @@
 import React from 'react'
 
-const Menu = ({menuData}) => {
-  // this function takes in a menu, and returns a collection of pie items
-  menuData.forEAch(pie => {
-     //Make a Pie!
-  })
+const Menu = (props) => {
+  const { menuData } = props
+
+  const makePies = () => {
+    return menuData.map(pie => {
+      const {
+        name,
+        ingredients,
+      } = pie
+
+      return (
+        <Pie 
+          name={name}
+          filling={ingredients.filling}
+          crust={ingredients.crust}
+        />
+      )
+    })
+  }
+  
+  return (
+    <section>
+      {makePies}
+    </section>
+  )
 }
 
 export default Menu
