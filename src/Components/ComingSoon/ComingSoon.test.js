@@ -18,14 +18,26 @@ describe('ComingSoon', () => {
   })
 
   it('should display some information about the next pie sale', () => {
+    const { getByText } = render(
+      <MemoryRouter>
+        <ComingSoon />
+      </MemoryRouter>
+    )
+
+    const comingSoonCopy = getByText(/this page is currently under construction in preparation for our valentine's day sale! please check back on monday, february 1st to see our new menu and place an order!/i)
+
+    expect(comingSoonCopy).toBeInTheDocument()
+  })
+
+  it('should display a banner image of pie and sliced fruit and sunlight', () => {
     const { getByRole } = render(
       <MemoryRouter>
         <ComingSoon />
       </MemoryRouter>
     )
 
-    const comingSoonCopy = getByRole('paragraph', { name: /this page is currently under construction in preparation for our valentine's day sale! please check back on monday, february 1st to see our new menu and place an order!/i })
+    const image = getByRole('img', { name: /creme pie with sliced fruit and sunlight/i })
 
-    expect(comingSoonCopy).toBeInTheDocument()
+    expect(image).toBeInTheDocument()
   })
 })
