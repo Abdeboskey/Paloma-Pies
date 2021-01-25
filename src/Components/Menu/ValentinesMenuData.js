@@ -1,30 +1,58 @@
 export const valentinesMenu = [
   {
-   name: 'Chocolate Creme',
-   ingredients: {
-      filling: 'it’s made of love',
-      crust: 'It’s made of crispy flakey love It’s made of crispy flakey love',
-    } 
+    id: 1,
+    name: 'Golden Pecan Pie',
+    description: 'Clean & rich sweetness',
+    ingredients: 'Pecans, Golden Syrup (Water, Sugar, Lemon), Eggs, Sugar, Butter, Salt, Vanilla Extract',
+    availableGF: true,
+    availableVegan: false,
   },
   {
-   name: 'Chocolate Creme',
-   ingredients: {
-      filling: 'it’s made of love',
-      crust: 'It’s made of crispy flakey love'
-    } 
+    id: 2,
+    name: 'Mixed Berry Pie',
+    description: 'Classic mix of berries & a splash of rosé wine',
+    ingredients: 'Mixed Berries (Raspberry, Blueberry, Blackberry), Lemon, Dash of Rosé Wine, Sugar, Quick Cooking Tapioca (Organic Tapioca Starch, Citric Acid), Salt, Butter',
+    availableGF: true,
+    availableVegan: true,
   },
   {
-   name: 'Chocolate Creme',
-   ingredients: {
-      filling: 'it’s made of love',
-      crust: 'It’s made of crispy flakey love'
-    } 
+    id: 3,
+    name: 'Blood Orange Creme Pie',
+    description: 'Creamy & slightly tart',
+    ingredients: 'Milk, Egg Yolk, Salt, Sugar, Cornstarch, Butter, Vanilla Extract, Blood Orange (Zest & Juice)',
+    availableGF: true,
+    availableVegan: false,
   },
   {
-   name: 'Chocolate Creme',
-   ingredients: {
-      filling: 'it’s made of love',
-      crust: 'It’s made of crispy flakey love'
-    } 
+    id: 4,
+    name: 'Chocolate Creme Pie',
+    description: 'Rich, Creamy, Silky, Dark Chocolate, Truffle',
+    ingredients: 'Milk, Egg Yolk, Salt, Cornstarch, Butter, Vanilla Extract, Cocoa Powder, Brown Sugar',
+    availableGF: true,
+    availableVegan: false,
+  },
+  {
+    id: 5,
+    name: 'Tarragon Whipped Cream',
+    description: 'Sweet and down to earth with a small kick of spice',
+    ingredients: 'Tarragon Simple Syrup (Sugar, Tarragon, Water), Heavy Whipping Cream',
+    availableGF: null,
+    availableVegan: null,
+  },
+  {
+    id: 6,
+    name: 'Blood Orange Mimosa Ice Cream',
+    description: 'Bright & tangy blood orange with a hint of effervescense',
+    ingredients: 'Milk, Heavy Whipping Cream, Sugar, Blood Orange (Zest & Juice), Sparkling Wine, Egg Yolks',
+    availableGF: null,
+    availableVegan: null,
+  },
+  {
+    id: 7,
+    name: 'Chocolate Covered Strawberries',
+    description: 'Turmeric white chocolate with milk chocolate swirl',
+    ingredients: 'Strawberries, Milk Chocolate, White Chocolate, Turmeric',
+    availableGF: null,
+    availableVegan: null,
   },
 ]
