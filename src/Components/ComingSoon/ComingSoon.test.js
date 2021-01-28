@@ -24,20 +24,20 @@ describe('ComingSoon', () => {
       </MemoryRouter>
     )
 
-    const comingSoonCopy = getByText(/this page is currently under construction in preparation for our valentine's day sale! please check back on monday, february 1st to see our new menu and place an order!/i)
+    const comingSoonCopy = getByText(/this page is currently under construction/i)
 
     expect(comingSoonCopy).toBeInTheDocument()
   })
 
-  it('should display a banner image of pie and sliced fruit and sunlight', () => {
-    const { getByRole } = render(
+  it('should display a banner with hugs and kisses', () => {
+    const { getByText } = render(
       <MemoryRouter>
         <ComingSoon />
       </MemoryRouter>
     )
 
-    const image = getByRole('img', { name: /creme pie with sliced fruit and sunlight/i })
+    const hugsNKisses = getByText(/xoxo/i)
 
-    expect(image).toBeInTheDocument()
+    expect(hugsNKisses).toBeInTheDocument()
   })
 })
