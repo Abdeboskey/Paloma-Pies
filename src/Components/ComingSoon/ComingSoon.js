@@ -7,26 +7,33 @@ import fbIcon from '../../assets/icons/fbIcon.png'
 const ComingSoon = () => {
   return (
     <main className={style.ComingSoon}>
-      <h1>
-        Welcome to Paloma Pies<span>🕊</span>
-      </h1>
-      <p className={style.topBanner}>
-        This page is currently under construction
-        <br />
-        in preparation for our Valentine's Day Sale!
-        <br />
-        Please check back on Monday, February 1st
-        <br />
-        to see our new menu and place an order!
-        <br />
-      </p>
+      <h1 className={style.title}>Welcome to Paloma Pies</h1>
+      <div className={style.topBanner}>
+        <p className={style.message}>
+          This page is currently under construction
+          <br />
+          in preparation for our Valentine's Day Sale! Please check back on
+          Monday, February 1st to see our new menu and place an order!
+        </p>
+      </div>
       <p className={style.bottomBanner}>
-        -xoxo{' '}
-        <span>❤️</span>
+        -xoxo <span>❤️</span>
       </p>
       <div className={style.social}>
-        <img src={instaIcon} alt="instagram icon" />
-        <img src={fbIcon} alt="facebook icon" />
+        <a
+          href="https://www.instagram.com/paloma_pies/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={instaIcon} alt="instagram icon" />
+        </a>
+        <a
+          href="https://www.facebook.com/PalomaPiesCO/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={fbIcon} alt="facebook icon" />
+        </a>
       </div>
     </main>
   );
