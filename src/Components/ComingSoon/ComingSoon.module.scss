@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Manjari:wght@700&display=swap');
+
+.ComingSoon {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../assets/images/background.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.title {
+  font-family: 'Homemade Apple';
+  font-size: 2.4em;
+  color: pink;
+  margin: .8rem auto 0 15%;
+  padding: 0 1rem;
+  filter: drop-shadow(2px 2px 5px rgba(255, 192, 203, 0.822));
+  text-shadow: .24px .24px 1px  rgba(129, 96, 102, 0.822);
+}
+
+.topBanner {
+  background-image: linear-gradient(to right,  rgba(230, 230, 230, 0.555) 40%,  rgba(230, 230, 230, 0));
+  margin: 11% 0 0 22%;
+  padding: 2rem 1rem 2rem 4.4rem;
+  border-top-left-radius: 400px;
+  border-bottom-left-radius: 400px;
+  filter: drop-shadow(5px 5px 5px rgba(255, 192, 203, 0.822));
+}
+
+p {
+  font: 1.2em 'Manjari';
+  line-height: 1.4;
+  color: rgb(92, 19, 19);
+  padding: 0;
+  margin: 0;
+}
+
+.message {
+  max-width: 400px;
+}
+
+.bottomBanner {
+  @extend .topBanner;
+  margin: 1% 0 auto 32.4%;
+  padding: 1em 0 .6em 3.24rem;
+  font-size: 2em;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+img {
+  width: 3rem;
+  margin: 0 1rem 1rem 0;
+  transition: ease-in-out .24s;
+  &:hover {
+    filter: invert(100%);
+  }
+}
+
+@media all and (max-width: 450px) {
+  .topBanner{
+    background-image: linear-gradient(to right, rgba(230, 230, 230, 0.774) 60%, rgba(230, 230, 230, 0));
+    font-size: 1em;
+    margin: 5% 0 0 10%;
+  }
+
+  .bottomBanner {
+    margin: 10% 0 0 50%;
+  }
+
+  .social {
+    flex-direction: row;
+    height: 4rem;
+    width: 8rem;
+  }
+
+  img {
+    height: 3rem;
+  }
+}
