@@ -1,4 +1,4 @@
-@import url('https://use.typekit.net/vfe4bny.css');
+@import '../../scss/variables.scss';
 
 .VDayBanner {
   position: relative;
@@ -6,11 +6,11 @@
 
 .neon {
   position: absolute;
-  font-family: ht-neon, sans-serif;
+  font-family: $neon;
   font-weight: 400;
   font-style: normal;
   font-size: calc(100% + 6vw);
-  color: rgb(251, 133, 216);
+  color: $hotPink;
   filter: drop-shadow(0px 0px 8px rgba(255, 192, 203, 0.822));
   text-shadow: .24px .24px 1px  rgba(129, 96, 102, 0.822);
   z-index: 100;
@@ -33,10 +33,10 @@
 }
 
 .text p {
-  width: 60%;
-  font-family: ht-neon, sans-serif;
-  font-size: calc(100% + .5vw);
-  color: rgb(251, 133, 216);
+  width: 65%;
+  font-family: $mainFont;
+  font-size: calc(100% + .4vw);
+  color: $hotPink;
   filter: drop-shadow(0px 0px 8px rgba(255, 192, 203, 0.822));
   text-shadow: .24px .24px 1px  rgba(129, 96, 102, 0.822);
 }
