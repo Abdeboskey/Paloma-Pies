@@ -26,7 +26,7 @@ const Landing = () => {
         <img
           className={`col-2 ${style.border}`}
           src={borderRight}
-          alt="zig zag borders"
+          alt="zig zag border"
         />
       </div>
     </section>
