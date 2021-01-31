@@ -9,11 +9,11 @@ const VDayBanner = () => {
       <img
         className={`img-fluid ${style.bannerImg}`}
         src={bloodOrangeBanner}
-        alt="blood orange creme pie with orange slices and flowers"
+        alt="blood orange cream pie with orange slices and flowers"
       />
       <div className={style.text}>
         <p>
-          Paloma Pies is all about handcrafted pies and treats – Everything is
+          Paloma Pies is all about handcrafted pies and treats – everything is
           made from scratch here in Denver, CO.
         </p>
         <p>
