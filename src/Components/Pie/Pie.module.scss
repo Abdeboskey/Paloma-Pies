@@ -1,0 +1,53 @@
+@import '../../scss/variables.scss';
+
+.Pie {
+  margin: 1rem;
+  position: relative;
+  // z-index: -50;
+}
+
+.piePan {
+  
+}
+
+.piePic {
+  height: 350px;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.767);
+  max-width: 100%;
+}
+
+.pieTitleLeft {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  padding: .6rem;
+  font-family: $neon;
+  font-size: calc(100% + 1rem);
+  color: $hotPink;
+  filter: drop-shadow(5px -5px 8px rgba(255, 192, 203, 0.822));
+  text-shadow: .24px .24px 1px  rgba(129, 96, 102, 0.822);
+  background: rgba(255, 255, 255, 0.719);
+  border-radius: 1rem;
+}
+
+.pieTitleRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .6rem;
+  font-family: $neon;
+  font-size: calc(100% + 1rem);
+  color: $hotPink;
+  filter: drop-shadow(-5px 5px 8px rgba(255, 192, 203, 0.822));
+  text-shadow: .24px .24px 1px  rgba(129, 96, 102, 0.822);
+  background: rgba(255, 255, 255, 0.719);
+  border-radius: 1rem;
+}
+
+@media all and (max-width: 450px) {
+  .piePic {
+    height: auto;
+    max-width: 100%;
+  }
+}
