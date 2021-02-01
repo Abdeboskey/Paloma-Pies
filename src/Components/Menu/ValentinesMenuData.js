@@ -13,7 +13,7 @@ import iceCreamDetail from '../../assets/images/menu/iceCreamDetail.jpg'
 import strawberryMain from '../../assets/images/menu/strawberryMain.jpg'
 import strawberryDetail from '../../assets/images/menu/strawberryDetail.jpg'
 
-export const valentinesMenu = [
+const valentinesMenu = [
   {
     id: 1,
     name: 'Golden Pecan Pie',
@@ -85,3 +85,5 @@ export const valentinesMenu = [
     availableVegan: null,
   },
 ]
+
+export default valentinesMenu
