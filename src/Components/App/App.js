@@ -1,5 +1,6 @@
 import Landing from '../Landing/Landing'
 import VDayBanner from '../VDayBanner/VDayBanner'
+import Menu from '../Menu/Menu'
 import './App.scss'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Landing />
       <VDayBanner />
+      <Menu />
     </div>
   )
 }
