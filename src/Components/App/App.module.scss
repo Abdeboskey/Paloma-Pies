@@ -1,3 +1,17 @@
+.main {
+  animation: sliceFade 3s;
+}
+
+@keyframes sliceFade {
+  0% {
+    filter: opacity(0);
+  }
+
+  100% {
+    filter: opacity(1);
+  }
+}
+
 .pieContainer {
   width: 100%;
   height: 100vh;
