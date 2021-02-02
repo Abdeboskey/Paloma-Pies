@@ -28,7 +28,7 @@ function App() {
           />
         </div>
       )}
-      <div className={loading ? style.hidden : ""}>
+      <div className={loading ? style.hidden : style.main}>
         <Landing />
         <VDayBanner />
         <Menu />
