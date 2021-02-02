@@ -1,12 +1,11 @@
 import React from 'react'
 import style from './ComingSoon.module.scss'
-// import comingSoonBanner from '../../assets/images/comingSoonBanner.jpg'
 import instaIcon from '../../assets/icons/instaIcon.png'
 import fbIcon from '../../assets/icons/fbIcon.png'
 
 const ComingSoon = () => {
   return (
-    <main className={style.ComingSoon}>
+    <main className={`container-fluid ${style.ComingSoon}`}>
       <h1 className={style.title}>Welcome to Paloma Pies</h1>
       <div className={style.topBanner}>
         <p className={style.message}>

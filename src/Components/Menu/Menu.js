@@ -1,30 +1,61 @@
 import React from 'react'
 import Pie from '../Pie/Pie'
+import valentinesMenu from './ValentinesMenuData.js'
+import style from './Menu.module.scss'
+import zigZagBanner from '../../assets/images/zigZagBanner.png'
 
-const Menu = (props) => {
-  const { menuData } = props
+const Menu = () => {
 
   const makePies = () => {
-    return menuData.map(pie => {
+    return valentinesMenu.map((pie, index) => {
       const {
+        id,
         name,
-        ingredients,
+        description,
+        img1,
+        img2,
       } = pie
 
+      if (index === valentinesMenu.length - 1) {
+        return (
+          <div className="d-flex">
+            <span className={`align-self-center ${style.heart}`}>❤️</span>
+            <Pie
+              id={id}
+              name={name}
+              description={description}
+              img1={img1}
+              img2={img2}
+            />
+            <span className={`align-self-center ${style.heart}`}>❤️</span>
+          </div>
+        );
+      }
+      
       return (
-        <Pie 
+        <Pie
+          id={id}
           name={name}
-          filling={ingredients.filling}
-          crust={ingredients.crust}
+          description={description}
+          img1={img1}
+          img2={img2}
         />
       )
     })
   }
   
   return (
-    <section>
-      {makePies}
-    </section>
+    <div className={style.Menu}>
+      <div className={style.banner}>
+        <img className={`img-fluid ${style.zigZag}`} src={zigZagBanner} alt="hand drawn zig zag design"/>
+        <div className={style.menuCard}>
+          <h1 className={`${style.heading}`}>Menu</h1>
+        </div>
+      </div>
+      <div className="d-flex flex-wrap justify-content-center mt-2">
+        {makePies()}
+      </div>
+    </div>
   )
 }
 

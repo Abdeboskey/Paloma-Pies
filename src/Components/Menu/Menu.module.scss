@@ -1,0 +1,36 @@
+@import '../../scss/variables.scss';
+
+.menuCard {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  min-width: 30%;
+  height: 287%;
+  background-color: $hotPink;
+  border-radius: 3px;
+  box-shadow: 0px 5px 20px black;
+  padding-top: 4vw;
+  background: linear-gradient($hotPink, rgba(131, 49, 49, 0.918));
+}
+
+.banner {
+  position: relative;
+  background: linear-gradient($champagne, rgba(255, 255, 255, 0));
+}
+
+.heading {
+  text-align: center;
+  font-family: $mainFont;
+  font-size: calc(100% + 8vw);
+}
+
+.heart {
+  font-size: 3rem;
+  z-index: 100;
+}
+
+@media all and (max-width: 450px) {
+  .menuCard {
+    height: 2100px;
+  }
+}

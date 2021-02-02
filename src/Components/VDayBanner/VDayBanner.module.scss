@@ -1,0 +1,65 @@
+@import '../../scss/variables.scss';
+
+.VDayBanner {
+  position: relative;
+}
+
+.neon {
+  position: absolute;
+  font-family: $neon;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(100% + 6vw);
+  color: $hotPink;
+  filter: drop-shadow(0px 0px 8px rgba(255, 192, 203, 0.822));
+  text-shadow: .24px .24px 1px  rgba(129, 96, 102, 0.822);
+  z-index: 100;
+  margin: 2rem 0 0 2rem;
+}
+
+.bannerImg {
+  position: relative;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 38%;
+  left: 66%;
+  padding: 1rem 1rem 0;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.644) 50%, rgba(255, 255, 255, 0));
+  border-radius: 10px;
+}
+
+.text p {
+  width: 65%;
+  font-family: $mainFont;
+  font-size: calc(100% + .4vw);
+  color: $hotPink;
+  filter: drop-shadow(0px 0px 8px rgba(255, 192, 203, 0.822));
+  text-shadow: .24px .24px 1px  rgba(129, 96, 102, 0.822);
+}
+
+@media all and (max-width: 450px) {
+  .neon {
+    margin: 1rem 0 0 1rem;
+  }
+
+  .text {
+    flex-direction: row;
+    position: relative;
+    top: 50%;
+    left: 0%;
+    width: auto;
+    margin-right: 0;
+  }
+  
+  .text p {
+    font-size: 1rem;
+  }
+
+}
+
+@media all and (max-width: 1100px) {
+}
