@@ -52,7 +52,7 @@ const Menu = () => {
           <h1 className={`${style.heading}`}>Menu</h1>
         </div>
       </div>
-      <div className={`d-flex flex-wrap justify-content-center mt-2 ${style.piePan}`}>
+      <div className="d-flex flex-wrap justify-content-center mt-2">
         {makePies()}
       </div>
     </div>
