@@ -12,11 +12,8 @@ const Menu = () => {
         id,
         name,
         description,
-        ingredients,
         img1,
         img2,
-        availableGF,
-        availableVegan
       } = pie
 
       if (index === valentinesMenu.length - 1) {
@@ -27,11 +24,8 @@ const Menu = () => {
               id={id}
               name={name}
               description={description}
-              ingredients={ingredients}
               img1={img1}
               img2={img2}
-              availableGF={availableGF}
-              availableVegan={availableVegan}
             />
             <span className={`align-self-center ${style.heart}`}>❤️</span>
           </div>
@@ -43,11 +37,8 @@ const Menu = () => {
           id={id}
           name={name}
           description={description}
-          ingredients={ingredients}
           img1={img1}
           img2={img2}
-          availableGF={availableGF}
-          availableVegan={availableVegan}
         />
       )
     })
