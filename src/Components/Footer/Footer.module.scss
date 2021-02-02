@@ -1,0 +1,76 @@
+@import '../../scss/variables.scss';
+
+.Footer {
+  position: relative;
+}
+
+.zigZag {
+  filter: opacity(70%);
+}
+
+.orderLink {
+  font-family: $neon;
+  font-size: calc(100% + 6.5vw);
+  text-shadow: 0px 0px 10px $hotPink;
+  text-align: center;
+  background: radial-gradient(rgba(255, 255, 255, 0.808) 50%, $champagne);
+  border-radius: 50%;
+  color: $hotPink;
+  position: absolute;
+  top: 12%;
+  left: 19%;
+  right: 19%;
+  transition: all .6s ease-in-out;
+  &:hover {
+    filter: drop-shadow(0px 0px 20px $hotPink);
+  }
+}
+
+.disclaimer {
+  font-family: $mainFont;
+  font-size: calc(100% + 1vw);
+  margin: 0 5rem;
+}
+
+.headings {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: $mainFont;
+}
+
+.border{
+  @extend .zigZag;
+  height: 40%;
+  padding: 0;
+}
+
+.palomaStamp {
+  height: auto;
+  width: 12vw;
+}
+
+.icons img {
+  height: 2.5vw;
+  margin: .5rem .5rem 1rem .5rem;
+  transition: all .6s ease-in-out;
+  &:hover {
+    filter: drop-shadow(0px 0px 5px $hotPink);
+  }
+}
+
+@media all and (max-width: 450px) {
+  .orderLink {
+    font-size: calc(100% + 1rem);
+    top: 8%;
+  }
+
+  .icons img {
+    height: 13vw;
+    margin: 1rem;
+  }
+  
+  .palomaStamp {
+    width: 30vw;
+  }
+}
