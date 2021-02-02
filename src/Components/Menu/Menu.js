@@ -47,7 +47,7 @@ const Menu = () => {
   return (
     <div className={style.Menu}>
       <div className={style.banner}>
-        <img className={`img-fluid ${style.zigZig}`} src={zigZagBanner} alt="hand drawn zig zag design"/>
+        <img className={`img-fluid ${style.zigZag}`} src={zigZagBanner} alt="hand drawn zig zag design"/>
         <div className={style.menuCard}>
           <h1 className={`${style.heading}`}>Menu</h1>
         </div>
