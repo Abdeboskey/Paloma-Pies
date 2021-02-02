@@ -10,12 +10,8 @@
   border-radius: 3px;
   box-shadow: 0px 5px 20px black;
   padding-top: 4vw;
-  background: linear-gradient($hotPink, rgba(131, 49, 49, 0.986));
+  background: linear-gradient($hotPink, rgba(131, 49, 49, 0.918));
 }
-
-.zigZag {
-}
-
 
 .banner {
   position: relative;
@@ -35,6 +31,6 @@
 
 @media all and (max-width: 450px) {
   .menuCard {
-    height: 2140px;
+    height: 2100px;
   }
 }
