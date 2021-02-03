@@ -59,6 +59,13 @@
   }
 }
 
+@media all and (max-width: 1200px) {
+  .orderLink {
+    font-size: calc(100% + 5vw);
+    top: 9%;
+  }
+}
+
 @media all and (max-width: 500px) {
   .orderLink {
     font-size: calc(100% + 1rem);
