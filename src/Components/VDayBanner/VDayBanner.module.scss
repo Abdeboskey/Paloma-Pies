@@ -25,11 +25,10 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 38%;
+  top: 26vw;
   left: 66%;
   padding: 1rem 1rem 0;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.644) 50%, rgba(255, 255, 255, 0));
-  border-radius: 10px;
 }
 
 .text p {
@@ -46,20 +45,22 @@
     margin: 1rem 0 0 1rem;
   }
 
+  .text p {
+    font-size: 1rem;
+  }  
+}
+
+@media all and (max-width: 1100px) {
   .text {
     flex-direction: row;
     position: relative;
     top: 50%;
     left: 0%;
     width: auto;
-    margin-right: 0;
   }
-  
+
   .text p {
-    font-size: 1rem;
+    margin-left: .75rem;
+    margin-right: .75rem;
   }
-
-}
-
-@media all and (max-width: 1100px) {
 }
