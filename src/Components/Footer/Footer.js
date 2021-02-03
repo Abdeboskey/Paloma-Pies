@@ -49,11 +49,7 @@ const Footer = () => {
             src={palomaStamp}
             alt="paloma pies logo"
           />
-          <p className="mt-3">
-            Contact:{" "}
-            <a href="mailto: info@palomapies.com">info@palomapies.com</a>
-          </p>
-          <div className={`d-flex ${style.icons}`}>
+          <div className={`d-flex mt-3 ${style.icons}`}>
             <a
               href="https://www.instagram.com/paloma_pies/"
               target="_blank"
@@ -77,6 +73,10 @@ const Footer = () => {
             </a>
           </div>
           <p>© 2021 Chenoa Rangel</p>
+          <p>
+            Contact:{" "}
+            <a href="mailto: info@palomapies.com">info@palomapies.com</a>
+          </p>
           <p>
             All photos by{" "}
             <a
