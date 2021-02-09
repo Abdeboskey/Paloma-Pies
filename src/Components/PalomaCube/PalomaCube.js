@@ -446,9 +446,9 @@ const PalomaCube = () => {
   }
 
   return (
-    <>
+    <div className={style.shadowBox}>
       <canvas id="glCanvas" className={style.glCanvas} width={viewWidth} height={viewHeight}></canvas>;
-    </>
+    </div>
   )
 }
 

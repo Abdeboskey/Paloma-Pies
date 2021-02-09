@@ -1,5 +1,14 @@
+.shadowBox {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  box-shadow: inset 0px 0px 300px rgb(68, 202, 255);
+}
+
 .glCanvas {
+  position: absolute;
   width: 100vw;
   height: 90vh;
   margin-bottom: -2rem;
+  z-index: -100;
 }
