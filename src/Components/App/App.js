@@ -7,6 +7,7 @@ import PalomaCube from '../PalomaCube/PalomaCube'
 import style from './App.module.scss'
 
 import palomaStamp from '../../assets/images/palomaStamp.png'
+import ClosedForBusiness from '../ClosedForBusiness/ClosedForBusiness'
 
 function App() {
   const [ loading, setLoading ] = useState(false)
@@ -30,11 +31,10 @@ function App() {
         </div>
       )}
       <div className={loading ? style.hidden : style.main}>
-        <PalomaCube />
         <Landing />
-        <VDayBanner />
-        <Menu />
-        <Footer />
+        <PalomaCube />
+        <ClosedForBusiness />
+        <Footer/>
       </div>
     </div>
   );
