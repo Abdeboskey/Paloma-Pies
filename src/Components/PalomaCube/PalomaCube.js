@@ -1,16 +1,17 @@
 // This was built according to the tutorial on MDN https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial/
 import React, { useEffect } from 'react'
 import { mat4 } from 'gl-matrix'
+import style from './PalomaCube.module.scss'
 import cubetexture from '../../assets/images/cubetexture.png'
 
 const PalomaCube = () => {
 
   let cubeRotation = 0.0;
-  let viewHeight = window.screen.height;
-  let viewWidth = window.screen.width;
+  const viewHeight = window.screen.height;
+  const viewWidth = window.screen.width;
 
   useEffect(() => {
-    main();
+    main()
   })
 
   const main = () => {
@@ -88,7 +89,7 @@ const PalomaCube = () => {
     var then = 0;
 
     const render = (now) => {
-      now *= 0.001;  // convert to seconds
+      now *= 0.001;
       const deltaTime = now - then;
       then = now;
 
@@ -305,11 +306,11 @@ const PalomaCube = () => {
 
     mat4.rotate(modelViewMatrix,    // destination matrix
                 modelViewMatrix,    // matrix to rotate
-                cubeRotation * .5,  // amount to rotate in radians
+                cubeRotation * .1,  // amount to rotate in radians
                 [0, 0, 1]);         // axis rotate around (Z)
     mat4.rotate(modelViewMatrix,    // destination matrix
                 modelViewMatrix,    // matrix to rotate
-                cubeRotation * .3,  // amount to rotate in radians
+                cubeRotation * .1,  // amount to rotate in radians
                 [0, 1, 0]);         // axis rotate around (X)
     mat4.rotate(modelViewMatrix,    // destination matrix
                 modelViewMatrix,    // matrix to rotate
@@ -446,7 +447,7 @@ const PalomaCube = () => {
 
   return (
     <>
-      <canvas id="glCanvas" width={viewWidth} height={viewHeight}></canvas>;
+      <canvas id="glCanvas" className={style.glCanvas} width={viewWidth} height={viewHeight}></canvas>;
     </>
   )
 }
