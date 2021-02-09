@@ -3,6 +3,7 @@ import Landing from '../Landing/Landing'
 import VDayBanner from '../VDayBanner/VDayBanner'
 import Menu from '../Menu/Menu'
 import Footer from '../Footer/Footer'
+import PalomaCube from '../PalomaCube/PalomaCube'
 import style from './App.module.scss'
 
 import palomaStamp from '../../assets/images/palomaStamp.png'
@@ -29,6 +30,7 @@ function App() {
         </div>
       )}
       <div className={loading ? style.hidden : style.main}>
+        <PalomaCube />
         <Landing />
         <VDayBanner />
         <Menu />
