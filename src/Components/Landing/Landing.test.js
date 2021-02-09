@@ -7,7 +7,7 @@ describe('Landing', () => {
   it('should render the correct contents', () => {
     const { getByRole, getAllByRole } = render(<Landing/>)
 
-    const slicesLanding = getByRole('img', { name: /four slices of pie on a sunlit table with houseplants/i })
+    const slicesLanding = getByRole('img', { name: /a pie on a sunlit windowsill with plants and a bicycle/i })
     const title = getByRole('heading', { name: /paloma pies/i })
     const motto = getByRole('heading', { name: /pies made with ❤️ in denver, co/i })
     const borders = getAllByRole('img', { name: /zig zag border/i })
