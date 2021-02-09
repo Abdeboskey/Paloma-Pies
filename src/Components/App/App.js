@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react'
 import Landing from '../Landing/Landing'
-import VDayBanner from '../VDayBanner/VDayBanner'
-import Menu from '../Menu/Menu'
 import Footer from '../Footer/Footer'
 import PalomaCube from '../PalomaCube/PalomaCube'
+import ClosedForBusiness from '../ClosedForBusiness/ClosedForBusiness'
+import WavyLine from '../WavyLine/WavyLine'
 import style from './App.module.scss'
 
 import palomaStamp from '../../assets/images/palomaStamp.png'
-import ClosedForBusiness from '../ClosedForBusiness/ClosedForBusiness'
 
 function App() {
   const [ loading, setLoading ] = useState(false)
@@ -34,6 +33,7 @@ function App() {
         <Landing />
         <PalomaCube />
         <ClosedForBusiness />
+        <WavyLine />
         <Footer/>
       </div>
     </div>
