@@ -15,11 +15,11 @@ const Footer = () => {
     <div className={style.Footer}>
       
       <p className={`${style.disclaimer} text-center mt-5`}>
-        Ordering is open from now until midnight MST on Sunday, 2/7/21.
         <br />
         🕊
         <br />
-        These products were produced in a home kitchen that is not subject to
+        <br />
+        These products are produced in a home kitchen that is not subject to
         state licensure or inspection. These products are not intended for
         resale.
       </p>
