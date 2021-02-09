@@ -19,6 +19,7 @@ const Footer = () => {
         🕊
         <br />
         <br />
+        <br />
         These products are produced in a home kitchen that is not subject to
         state licensure or inspection. These products are not intended for
         resale.
