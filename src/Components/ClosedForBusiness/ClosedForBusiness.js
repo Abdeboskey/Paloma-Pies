@@ -1,4 +1,5 @@
 import React from 'react'
+import WavyLine from '../WavyLine/WavyLine'
 import style from './ClosedForBusiness.module.scss'
 
 const ClosedForBusiness = () => {
@@ -16,6 +17,7 @@ const ClosedForBusiness = () => {
         our next sale (Mother's Day 2021) and reach out if you have any
         questions!
       </p>
+      <WavyLine />
     </div>
   );
 }
