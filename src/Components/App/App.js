@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     setLoading(true)
-    setTimeout(()=> {
+    setTimeout(() => {
       setLoading(false)
     }, 3000)
   }, [])
@@ -30,7 +30,7 @@ function App() {
       <div className={loading ? style.hidden : style.main}>
         <Landing />
         <ClosedForBusiness />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
