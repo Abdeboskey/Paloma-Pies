@@ -1,7 +1,11 @@
+.WavyLine {
+  padding: 2vw;
+}
+
 .upWave {
   height: 4vw;
   width: 4vw;
-  border: 2px solid black;
+  border: 2px solid white;
   // border-radius: 10%;
   // border-top: none;
   border-bottom: none;
@@ -14,7 +18,7 @@
 .downWave {
   height: 6vw;
   width: 6vw;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 50%;
   border-bottom: none;
   // border-top: none;
