@@ -6,13 +6,9 @@
   height: 4vw;
   width: 4vw;
   border: 2px solid white;
-  // border-radius: 10%;
-  // border-top: none;
   border-bottom: none;
-  // border-left: none;
   border-right: none;
   transform: rotate(45deg);
-  // animation: wiggle .2s infinite linear alternate;
 }
 
 .downWave {
@@ -21,7 +17,6 @@
   border: 3px solid white;
   border-radius: 50%;
   border-bottom: none;
-  // border-top: none;
   border-left: none;
   border-right: none;
   animation: slowSpin 6s infinite alternate;
@@ -33,16 +28,5 @@
   }
   to {
     transform: rotate(365deg)
-  }
-}
-
-@keyframes wiggle {
-  from {
-    height: 5vw;
-    width: 4.75vw;
-  }
-  to {
-    height: 4.75vw;
-    width: 5vw;  
   }
 }
