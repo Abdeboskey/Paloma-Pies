@@ -1,5 +1,4 @@
 import React from 'react'
-import WavyLine from '../WavyLine/WavyLine'
 import style from './ClosedForBusiness.module.scss'
 
 const ClosedForBusiness = () => {
