@@ -1,7 +1,6 @@
 import React from 'react'
 import style from './Footer.module.scss'
 
-import zigZagBanner from '../../assets/images/zigZagBanner.png'
 import borderLeft from '../../assets/images/borderLeft.png'
 import borderRight from '../../assets/images/borderRight.png'
 import palomaStamp from '../../assets/images/palomaStamp.png'
@@ -9,31 +8,19 @@ import instaIcon from '../../assets/icons/instaIcon.png'
 import fbIcon from '../../assets/icons/fbIcon.png'
 import crystalBall from '../../assets/icons/crystalBall.png'
 
-const orderForm = 'https://docs.google.com/forms/d/e/1FAIpQLSeArz3bQT3gvbQ_PCHv4p3nr5-g6cZnQTAxkWlhl7BttINSLA/viewform'
 
 
 const Footer = () => {
   return (
     <div className={style.Footer}>
-      <img
-        className={`img-fluid ${style.zigZag}`}
-        src={zigZagBanner}
-        alt="hand drawn zig zag design"
-      />
-      <a
-        className={style.orderLink}
-        href={orderForm}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <h2>Click Here To Place Your Order</h2>
-      </a>
+      
       <p className={`${style.disclaimer} text-center mt-5`}>
-        Ordering is open from now until midnight MST on Sunday, 2/7/21.
         <br />
         🕊
         <br />
-        These products were produced in a home kitchen that is not subject to
+        <br />
+        <br />
+        These products are produced in a home kitchen that is not subject to
         state licensure or inspection. These products are not intended for
         resale.
       </p>

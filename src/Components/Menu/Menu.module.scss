@@ -13,6 +13,10 @@
   background: linear-gradient($hotPink, rgba(131, 49, 49, 0.918));
 }
 
+.zigZag {
+  filter: opacity(70%);
+}
+
 .banner {
   position: relative;
   background: linear-gradient($champagne, rgba(255, 255, 255, 0));
@@ -29,8 +33,41 @@
   z-index: 100;
 }
 
+.orderBanner {
+  position: relative;
+}
+
+.orderLink {
+  font-family: $neon;
+  font-size: calc(100% + 6.5vw);
+  text-shadow: 0px 0px 10px $hotPink;
+  text-align: center;
+  background: radial-gradient(rgba(255, 255, 255, 0.808) 50%, $champagne);
+  border-radius: 50%;
+  color: $hotPink;
+  position: absolute;
+  top: 25%;
+  left: 19%;
+  right: 19%;
+  transition: all .6s ease-in-out;
+  &:hover {
+    filter: drop-shadow(0px 0px 20px $hotPink);
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .orderLink {
+    font-size: calc(100% + 5vw);
+  }
+}
+
 @media all and (max-width: 500px) {
   .menuCard {
     height: 2100px;
   }
+
+  .orderLink {
+    font-size: calc(100% + 1rem);
+  }
+
 }

@@ -8,24 +8,6 @@
   filter: opacity(70%);
 }
 
-.orderLink {
-  font-family: $neon;
-  font-size: calc(100% + 6.5vw);
-  text-shadow: 0px 0px 10px $hotPink;
-  text-align: center;
-  background: radial-gradient(rgba(255, 255, 255, 0.808) 50%, $champagne);
-  border-radius: 50%;
-  color: $hotPink;
-  position: absolute;
-  top: 12%;
-  left: 19%;
-  right: 19%;
-  transition: all .6s ease-in-out;
-  &:hover {
-    filter: drop-shadow(0px 0px 20px $hotPink);
-  }
-}
-
 .disclaimer {
   font-family: $mainFont;
   font-size: calc(100% + 1vw);
@@ -67,11 +49,7 @@
 }
 
 @media all and (max-width: 500px) {
-  .orderLink {
-    font-size: calc(100% + 1rem);
-    top: 6%;
-  }
-
+  
   .icons img {
     height: 13vw;
     margin: 1rem;

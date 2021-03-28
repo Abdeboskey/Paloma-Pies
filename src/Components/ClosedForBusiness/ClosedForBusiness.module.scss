@@ -1,0 +1,26 @@
+@import '../../scss/variables.scss';
+
+.ClosedForBusiness {
+  width: 87vw;
+  text-align: center;
+  font-family: $mainFont;
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 3vw;
+  background: radial-gradient(ellipse at top, rgb(86, 109, 185), transparent),
+              radial-gradient(ellipse at bottom, $hotPink, transparent);
+  box-shadow: 40px 25px 5px  rgb(86, 109, 185), 
+              -40px -25px 5px $hotPink, 
+              inset 5px 5px 15px rgb(86, 109, 185), 
+              inset -5px -5px 15px $hotPink;
+  border-radius: 1rem;
+}
+
+.ohHi {
+  font-size: calc(100% + 8vw);
+}
+
+.p {
+  font-size: calc(100% + .60vw);
+}

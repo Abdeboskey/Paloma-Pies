@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Landing.module.scss'
-import landingSlices from '../../assets/images/landingSlices.jpg'
+import pieSill from '../../assets/images/pieSill.jpg'
 import borderLeft from '../../assets/images/borderLeft.png'
 import borderRight from '../../assets/images/borderRight.png'
 
@@ -10,8 +10,8 @@ const Landing = () => {
     <section className={style.Landing}>
       <img
         className={`img-fluid ${style.landingSlices}`}
-        src={landingSlices}
-        alt="four slices of pie on a sunlit table with houseplants"
+        src={pieSill}
+        alt="a pie on a sunlit windowsill with plants and a bicycle"
       />
       <div className={`row ${style.headings}`}>
         <img

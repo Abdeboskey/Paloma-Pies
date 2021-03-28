@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 import Landing from '../Landing/Landing'
-import VDayBanner from '../VDayBanner/VDayBanner'
-import Menu from '../Menu/Menu'
 import Footer from '../Footer/Footer'
+import ClosedForBusiness from '../ClosedForBusiness/ClosedForBusiness'
 import style from './App.module.scss'
 
 import palomaStamp from '../../assets/images/palomaStamp.png'
@@ -12,7 +11,7 @@ function App() {
 
   useEffect(() => {
     setLoading(true)
-    setTimeout(()=> {
+    setTimeout(() => {
       setLoading(false)
     }, 3000)
   }, [])
@@ -30,8 +29,7 @@ function App() {
       )}
       <div className={loading ? style.hidden : style.main}>
         <Landing />
-        <VDayBanner />
-        <Menu />
+        <ClosedForBusiness />
         <Footer />
       </div>
     </div>

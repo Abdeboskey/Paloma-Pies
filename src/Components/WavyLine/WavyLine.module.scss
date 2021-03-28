@@ -1,0 +1,32 @@
+.WavyLine {
+  padding: 2vw;
+}
+
+.upWave {
+  height: 4vw;
+  width: 4vw;
+  border: 2px solid white;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
+
+.downWave {
+  height: 6vw;
+  width: 6vw;
+  border: 3px solid white;
+  border-radius: 50%;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  animation: slowSpin 6s infinite alternate;
+}
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(365deg)
+  }
+}
