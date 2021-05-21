@@ -13,9 +13,8 @@ const ClosedForBusiness = () => {
       </div>
       <p className={`col-md-6 mx-auto m-5 ${style.p}`}>
         ⪦ The pie shop is currently closed ⪧<br />
-        Our next sale will be for Mother's Day 2021, 
-        and please <a href="mailto: info@palomapies.com">reach out</a> if you have any
-        questions or need a special order in the meanwhile ☺️
+        Please <a href="mailto: info@palomapies.com">reach out</a> if you have any
+        questions or would like to place a special order ☺️
       </p>
     </div>
   );
